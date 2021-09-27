@@ -1,0 +1,38 @@
+// TODO 4 Navigation bar styling
+.navbar-store {
+    padding: 15px;
+
+    @include media-breakpoint-up(md) {
+        background-color: #fff !important;
+    }
+
+    .nav-item {
+        .nav-link {
+            @include media-breakpoint-down(lg) {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .profile-picture {
+        max-height: 45px;
+    }
+
+    .card-badge {
+        display: inline-block;
+        min-width: 2em;
+        padding: 0.3em;
+        border-radius: 50%;
+        font-size: 10px;
+        text-align: center;
+        background: #29a829;
+        color: #fefefe;
+        margin-left: -10px;
+    }
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 300ms linear;
+}
